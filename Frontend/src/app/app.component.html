@@ -1,0 +1,25 @@
+<nb-layout>
+<!--
+  <nb-layout-header>
+    Insert header here -->
+    <!-- <app-nav></app-nav>
+
+  </nb-layout-header> -->
+
+  <nb-layout-header>
+    <div style="width: 100%; display: inline-block;">
+        <div style="float: left;">
+            <a style="margin-left: 100px;" href="/home">Home</a>
+        </div>
+        <div style="float: right; overflow: hidden; color: rgb(150, 150, 150);">
+            {{message}}
+            <app-nav style="text-align: right;"></app-nav>
+        </div>
+    </div>
+  </nb-layout-header>
+
+  <nb-layout-column>
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+
+</nb-layout>

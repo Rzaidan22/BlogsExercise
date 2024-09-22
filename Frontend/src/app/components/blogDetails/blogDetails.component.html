@@ -1,0 +1,22 @@
+<div>
+    <div> 
+      <button class="backButton" (click)="backToHomePage()">Back To Home Page</button>
+    </div>
+
+    <div style="margin: 5px;">
+      <label style="margin-right: 5px;">Title</label>
+      <input type="text" style="width: 100px; height: 20px;" [(ngModel)]="Title">
+    </div>
+    <div style="margin: 5px;">
+      <label style="margin-right: 5px;">Content</label>
+      <input type="text" style="width: 100px; height: 20px;" [(ngModel)]="Content">
+    </div>
+    <div style="margin: 5px;">
+      <label style="margin-right: 5px;">Author</label>
+      <input type="text" style="width: 100px; height: 20px;" [(ngModel)]="Author">
+    </div>
+    <button class="saveButton" (click)="save()">Save</button>
+</div>
+
+
+

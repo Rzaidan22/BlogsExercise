@@ -1,0 +1,19 @@
+@import '~@nebular/theme/styles/theming';
+@import '~@nebular/theme/styles/themes/default';
+
+$nb-themes: nb-register-theme((
+
+  // add your variables here like:
+  layout-padding:0,
+  header-height: 75px,
+  header-color: #f7f7f7,
+  header-background-color: transparent, //rgba(0, 0, 0, 1),
+  color-primary-default: white,
+  footer-background-color: transparent,
+  footer-color: red,
+  footer-padding: 5px,
+  sidebar-background-color: transparent,
+  sidebar-width: 100px,
+
+
+), default, default);

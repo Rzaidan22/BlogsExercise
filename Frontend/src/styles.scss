@@ -1,0 +1,54 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$shell-project-primary: mat-palette($mat-indigo);
+$shell-project-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$shell-project-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$shell-project-theme: mat-light-theme($shell-project-primary, $shell-project-accent, $shell-project-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($shell-project-theme);
+
+@import 'themes';
+
+@import '~@nebular/theme/styles/globals';
+@import 'material-icons/iconfont/material-icons.css';
+
+@include nb-install() {
+  @include nb-theme-global();
+};
+/* You can add global styles to this file, and also import other style files */
+
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+:host {
+  display: block;
+  background-color: red;
+}
+
+[_nghost-bbu-c123] .main-container-fixed[_ngcontent-bbu-c123] {
+  position: relative;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

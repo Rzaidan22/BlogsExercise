@@ -1,0 +1,11 @@
+<button class="createBlogButton" (click)="openCreateBlogDialog()">
+    Create New Blog
+</button>
+<div >
+    <div *ngFor="let blog of blogs" style="display: inline-block; margin: 5px;">
+        <app-blog title="{{blog.title}}" content="{{blog.content}}" author="{{blog.author}}" _id="{{blog._id}}"></app-blog>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,7 @@
+<div *ngIf="!authenticated">
+    <a routerLink="/login" style="margin: 5px;">Login</a>
+    <a routerLink="/register" style="margin: 5px;">Register</a>
+</div>
+<div *ngIf="authenticated">
+    <a routerLink="/login" (click)="logout()">Logout</a>
+</div>
